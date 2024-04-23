@@ -1,0 +1,40 @@
+/*
+Dentro de tu CSS, creá una clase para el imperio que genere un background-color red, y asignásela a cada uno de los miembros del imperio en los opening tags de sus <li> dentro del archivo HTML.  */
+
+.imperio-miembro, .imperio-miembro-soldados{
+    background-color: red;
+}
+
+/*
+Hacé lo mismo para los rebeldes, pero que la clase genere un background-color blue.  */
+.rebeldes-miembro, .rebeldes-miembro-soldados{
+    background-color: blue;
+}
+/*
+
+Creá un ID para Darth Vader que aumente el tamaño de la letra de su nombre y un ID para Luke que lo ponga en itálica. */
+#dathVader{
+    font-size: 30px;
+}
+
+#luke{
+    font-style: italic;
+}
+/*Creá una clase para los soldados que les defina un borde a rayas usando la propiedad de CSS border, 
+y buscá en Google qué valores podés darle a border. */
+/*Creá una clase para los soldados que aumente el espacio entre sus letras con la propiedad de CSS letter-spacing. */
+
+.imperio-miembro-soldados, .rebeldes-miembro-soldados{
+    border: 1px solid #000;
+    letter-spacing: 10px;
+}
+
+
+
+/*Creá una clase para las unidades de apoyo y centralas con la propiedad de CSS text-align. */
+.imperio-miembro-apoyo ,.rebeldes-miembro-apoyo{
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Creá una clase para las naves y buscá en Google un atributo CSS que te permita poner todas las letras de sus nombres en mayúscula. 
+*/
