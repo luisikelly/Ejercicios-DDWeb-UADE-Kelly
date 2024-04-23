@@ -1,0 +1,1 @@
+!function(e,c){c.CPObject="cp",c.cp||(c.cp=(...e)=>{(c.cp.q=c.cp.q||[]).push(e)}),c.cp.l=+new Date;let{id:t,url:p}=c.cpscript.dataset;c.cp("create",t,{baseUrl:p}),e.head.appendChild(Object.assign(e.createElement("script"),{src:`${p}/now.js`,onload(){c.cp("authenticate",(e,t)=>!e&&!t.isLoggedIn()&&c.cp("render"))}}))}(document,window);
