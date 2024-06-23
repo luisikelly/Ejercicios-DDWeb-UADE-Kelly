@@ -1,0 +1,13 @@
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.img-fluid{
+    width: 100px;
+    height: 100px;
+ }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 JS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        body.light-mode {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        body.dark-mode {
+            background-color: #343a40;
+            color: #ffffff;
+        }
+    </style>    
+</head>
+<body class="light-mode">
+
+<!-- Menú -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Menú</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <button id="lightModeButton" class="btn btn-primary mx-2">Modo Claro</button>
+            </li>
+            <li class="nav-item">
+                <button id="darkModeButton" class="btn btn-secondary mx-2">Modo Oscuro</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Contenido -->
+<div class="container mt-5">
+    <h1 class="text-center">Ejercicio 4</h1>
+    <div class="text-center my-4">
+        <img src="grupo.png" class="img-fluid" alt="personas">
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>María</td>
+                <td>Gómez</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Juana</td>
+                <td>Ramírez</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- jQuery Script -->
+<script>
+    $(document).ready(function(){
+    $("#lightModeButton").click(function(){
+        $("body").removeClass("dark-mode").addClass("light-mode");
+        $(".navbar").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
+    });
+    $("#darkModeButton").click(function(){
+        $("body").removeClass("light-mode").addClass("dark-mode");
+        $(".navbar").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
+    });
+});
+</script>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVA 3 - Javascript - 2</title>
+</head>
+<body>
+    <script>
+    // Función para calcular días vividos
+    function calcularDiasVividos(fechaNacimiento) {
+    var fechaNacimiento = new Date(fechaNacimiento);
+    var fechaHoy = new Date();
+    var diferencia = fechaHoy.getTime() - fechaNacimiento.getTime();
+    var diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+    return diasVividos;
+    }
+    // Solicitar datos al usuario
+    var nombre = prompt("Por favor, ingresa tu nombre:");
+    var edad = prompt("Por favor, ingresa tu edad:");
+    var ciudad = prompt("Por favor, ingresa tu ciudad:");
+    var fechaNacimiento = prompt("Por favor, ingresa tu fecha de nacimiento(YYYY-MM-DD):");
+    // Mostrar mensaje de bienvenida
+    alert(`¡Bienvenido ${nombre}! \n¡Bienvenido a nuestra página!`);
+    // Calcular días vividos
+    var diasVividos = calcularDiasVividos(fechaNacimiento);
+    alert(`Desde que naciste, has vivido aproximadamente ${diasVividos} días.`);
+    </script>
+    </body>
+    
+</html>
